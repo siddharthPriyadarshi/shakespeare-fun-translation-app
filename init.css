@@ -6,7 +6,7 @@
     border-radius:50%;
 }
 
-#txt-area {
+#txtarea-input {
     display:block;
     margin: auto;
     height: 200px;
@@ -18,7 +18,30 @@
 #button-translate {
     display: block;
     margin: auto;
+    width: 150px;
     padding: 1rem;
     margin-top: 3rem;
+    border-radius:1rem;
+    border-width:0.3rem;
+    font-size:medium;
+
+}
+
+#txtarea-output{
+    border: solid black 0.5px;
+    display:block;
+    margin: auto;
+    height: 200px;
+    width: 600px;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+#subheading-txtarea {
+    display: block;
+    
+    font-size: larger;
+    margin:2rem;
+    text-align:center;
 }
 
