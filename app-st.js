@@ -17,11 +17,12 @@ function errorHandler(error) {
 
 function clickHandler() {
     fetch(getGeneratedUrl())
-    .then(response => response.json())
-    .then(json => output.innerText=json.contents.translated)
-    output.innerText=json.contents.translated;
+        .then(response => response.json())
+        .then(json => output.innerText=json.contents.translated)
+    // output.innerText=json.contents.translated;
+         .catch(errorHandler)
 }
-.catch(errorHandler)
+
 
 
 btntranslate.addEventListener("click",clickHandler);
