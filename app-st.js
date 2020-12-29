@@ -19,9 +19,9 @@ function clickHandler() {
     fetch(getGeneratedUrl())
     .then(response => response.json())
     .then(json => output.innerText=json.contents.translated)
-    .catch(errorHandler)
     output.innerText=json.contents.translated;
 }
+.catch(errorHandler)
 
 
 btntranslate.addEventListener("click",clickHandler);
